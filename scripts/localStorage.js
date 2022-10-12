@@ -93,13 +93,12 @@ let newline = document.createElement('br')
 let tab = document.createTextNode('\r\n\r\n  ')
 let k = 1;
 let display = () =>{
+    let body = document.querySelector('body');
     if (localStorage.length <= 2){
-        body.appendChild(document.createElement('p'));
-        ;
+        body.appendChild(document.createElement('p'));;
         window.alert("You don't have any transactions to view!");
         return;
     }
-    let body = document.querySelector('body');
     
     body.appendChild(document.createElement('h3'));
     let title = document.querySelector('h3');
